@@ -1,0 +1,35 @@
+body{
+	background-image: url('http://imgur.com/K1I6F4W');
+	background-size: 100%;
+}
+.header{
+	text-align: center;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 70px;
+	background-color: steelblue;
+	position: relative;
+}
+.triviaContainer{
+	background-color: lightgrey;
+	margin-left: 300px;
+	margin-right: 300px;
+	padding:20px;
+	font-family: 'Work Sans', sans-serif;
+	position: relative;
+}
+.question{
+	font-size: 25px;
+	text-align: center;
+	font-style: bold;
+}
+.answers{
+	list-style: upper-alpha;
+}
+.doneButton{
+	margin-left: 190px;
+	width: 200px;
+	height: 50px;
+	font-size: 25px;
+	padding: 1px;
+	box-shadow: 5px 5px 5px #888888;
+}
