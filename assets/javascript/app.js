@@ -1,8 +1,13 @@
+$(document).ready(){
+
+
 $(".startButton").click(function(){
-    // fixed?
+    // fixed
     // make it disappear
     // starts the game and counter
+    // $(".timer").setTimout(function(),1000 * 60);
 });
+
 // right answers
 var question1 = ($("input[@name=q1]:checked").val() != "c");
 var question2 = ($("input[@name=q2]:checked").val() != "d");
@@ -15,3 +20,13 @@ var question8 = ($("input[@name=q8]:checked").val() != "a");
 var question9 = ($("input[@name=q9]:checked").val() != "b");
 var question10 = ($("input[@name=q10]:checked").val() != "d");
 var question11 = ($("input[@name=q11]:checked").val() != "a");
+
+// if finished hit done button- goes to next page
+// if not finished but time is up go to next page
+
+$(".doneButton").click(function(){
+	// bring you to the answers page
+	// clearTimeOut?
+	// reset
+})
+};
