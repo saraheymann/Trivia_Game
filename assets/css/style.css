@@ -1,7 +1,4 @@
-body{
-	background-image: url('http://imgur.com/K1I6F4W');
-	background-size: 100%;
-}
+
 .header{
 	text-align: center;
 	font-family: 'Work Sans', sans-serif;
@@ -11,11 +8,12 @@ body{
 }
 .triviaContainer{
 	background-color: lightgrey;
-	margin-left: 300px;
-	margin-right: 300px;
+	margin-left: 280px;
 	padding:20px;
 	font-family: 'Work Sans', sans-serif;
 	position: relative;
+	width: 642px;
+	line-height: 25px;
 }
 .question{
 	font-size: 25px;
@@ -24,6 +22,7 @@ body{
 }
 .answers{
 	list-style: upper-alpha;
+	margin-top: 5px;
 }
 .doneButton{
 	margin-left: 190px;
