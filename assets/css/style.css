@@ -6,6 +6,11 @@
 	background-color: steelblue;
 	position: relative;
 }
+.buttonSection{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
 .triviaContainer{
 	background-color: lightgrey;
 	margin-left: 280px;
@@ -14,6 +19,12 @@
 	position: relative;
 	width: 642px;
 	line-height: 25px;
+}
+#timer{
+	text-align: center;
+	font-size: 25px;
+	color: red;
+	margin-bottom: 10px;
 }
 .question{
 	font-size: 25px;
@@ -31,4 +42,7 @@
 	font-size: 25px;
 	padding: 1px;
 	box-shadow: 5px 5px 5px #888888;
+}
+.results{
+	background-color: yellow;
 }

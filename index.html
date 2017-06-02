@@ -15,11 +15,14 @@
 </head>
 <body background="assets/images/backgroundutensil.jpg">
 <header class="header">Great Moments In Utensil History</header>
-
+<p class= buttonSection>
+You have 45 seconds to test your utensil knowledge !
+Press start to begin
 <button class="startButton">Start</button>
+</p>
 <div class="triviaContainer">
 
-<p class="timer"></p>
+<p id="timer"></p>
 <!-- Question one -->
 <p class="question">What is a splayd?</p>
 
@@ -160,11 +163,17 @@
 
 	<input type="radio" name="q11" value="c" id="q11c"><label for="q11c">Place the tips on the utensil on the plate while bottom touches the table.</label><br/>
 
-	<input type="radio" name="q11" value="d" id="q1d"><label for="q11d">Put them on the plate and cover them with a napkin.</label><br/>
+	<input type="radio" name="q11" value="d" id="q11d"><label for="q11d">Put them on the plate and cover them with a napkin.</label><br/>
 </ul>
 <br>
 <button class="doneButton">DONE</button>
 </div>
+<br/>
+</div>
+<section class="results">
+<div id="totalCorrect"></div>
+<div id="totalIncorrect"></div>
+</section>
 
 </body>
 <script type="text/javascript" src="assets/javascript/app.js"></script>
