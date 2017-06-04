@@ -7,13 +7,18 @@ $("#totalIncorrect").text(questionsString);
 // fixed poisiton start page
     // make the start page disappear
     // starts the game and counter
+ $(".triviaContainer").toggle();
+ $(".results").toggle();
+
 $(".startButton").on("click", function(){
+	$(".buttonSection").toggle();
+	$(".triviaContainer").toggle();
+	$(".startButton").toggle();
     var startTimer = setInterval(function() {
   	counter--;
     $('#timer').html('' + counter);
     if (counter === 0){
       clearInterval(startTimer);
-      alert(questionsString);
 }
 },1000);
 })
@@ -22,6 +27,8 @@ $(".startButton").on("click", function(){
 // if not finished but time is up go to next page
 
 $(".doneButton").click(function(){
+$(".triviaContainer").toggle();
+$(".results").toggle();
 if (!$("input[name=q1]:checked").val() ||            
 !$("input[name=q2]:checked").val() ||            
 !$("input[name=q3]:checked").val() ||            
@@ -32,8 +39,7 @@ if (!$("input[name=q1]:checked").val() ||
 !$("input[name=q8]:checked").val() ||            
 !$("input[name=q9]:checked").val() ||            
 !$("input[name=q10]:checked").val()            
-) {            
-alert("You're not done yet!");        
+) {                    
 }        
 else {            
 var question1name = "1";            
