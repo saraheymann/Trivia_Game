@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-var counter = 45;
+var counter = 10;
 var correctQuesitonsArray = [];
 var incorrectQuestionsArray = [];
 // var questionsString = 'You answered the following questions incorrectly: ' + quesitonsArray.join(', ') + '';                     
@@ -18,16 +18,17 @@ $(".startButton").on("click", function(){
     var startTimer = setInterval(function() {
   	counter--;
     $('#timer').html('' + counter);
-    if (counter === 0){
+    if (counter === 0){	
       clearInterval(startTimer);
-}
+      (".results").toggle();
+ 	}
 },1000);
 })
 
 // if finished hit done button- goes to next page
 // if not finished but time is up go to next page
 
-$(".doneButton").click(function(){
+$(".doneButton").click(function (){
 $(".triviaContainer").toggle();
 $(".results").toggle();
 
