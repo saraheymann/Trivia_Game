@@ -20,7 +20,8 @@ $(".startButton").on("click", function(){
     $('#timer').html('' + counter);
     if (counter === 0){	
       clearInterval(startTimer);
-      (".results").toggle();
+      $(".triviaContainer").toggle();
+      $(".results").toggle();
  	}
 },1000);
 })
@@ -31,6 +32,7 @@ $(".startButton").on("click", function(){
 $(".doneButton").click(function (){
 $(".triviaContainer").toggle();
 $(".results").toggle();
+});
 
  //question name to push to the array 
 var question1name = "1";            
@@ -98,4 +100,4 @@ $("#totalCorrect").text('Correct: ' + correctQuesitonsArray.length);
 $("#totalIncorrect").text('Incorrect: ' + incorrectQuestionsArray.length)                                 
 
 
-    });});
+ });
